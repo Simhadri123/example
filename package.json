@@ -1,0 +1,16 @@
+{
+  "name": "cryptolib-js",
+  "version": "1.0.0",
+  "description": "JavaScript blockchain utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "license": "MIT"
+}
