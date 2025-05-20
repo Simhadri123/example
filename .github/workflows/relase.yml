@@ -5,8 +5,11 @@ on:
 jobs:
   tag:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required for creating tags
     steps:
       - uses: actions/checkout@v4
-      - uses: Klemensas/action-autotag@stable
+      - uses: Klemensas/action-autotag@1.2.0
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          package_root: "." # Root directory containing package.json
+          tag_prefix: "v"   # Prefix tags with 'v' (e.g., v1.0.1)
